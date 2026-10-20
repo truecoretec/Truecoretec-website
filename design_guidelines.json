@@ -1,0 +1,82 @@
+{
+  "brand_identity": {
+    "company_name": "TRUECORE TECHNOLOGIES PVT. LTD.",
+    "tagline": "Advanced Materials. A Stronger Tomorrow.",
+    "positioning": "Manufacturers of High-Performance Polyurethane (PU) Products & Engineered Material Solutions",
+    "target_audience": "B2B OEM procurement managers, industrial plant engineers, mining & automotive equipment manufacturers, heavy machinery specifiers, global industrial distributors",
+    "tone_and_voice": "Engineering authority, precision craftsmanship, trustworthy industrial leadership, technically rigorous, non-consumer B2B focus"
+  },
+  "color_palette": {
+    "primary_deep_blue": "#003B7A",
+    "cyan_highlight": "#10A6D8",
+    "dark_charcoal_body": "#3F434A",
+    "light_grey_bg": "#EDEDED",
+    "white_main": "#FFFFFF",
+    "metallic_grey_border": "#8A8F96",
+    "semantic": {
+      "success": "#0D8A58",
+      "warning": "#D97706",
+      "error": "#DC2626",
+      "info": "#10A6D8"
+    },
+    "rules": "White (#FFFFFF) is strict dominant background. Light grey (#EDEDED) for subtle section alternations and spec panels. Deep TrueCore Blue (#003B7A) for headings, header, footer, primary buttons, and structural hierarchy. TrueCore Cyan (#10A6D8) selectively for interactive links, active tabs, icon highlights, hover states, and key callouts. Metallic Grey (#8A8F96) for crisp 1px borders, technical spec dividers, and icon strokes. ABSOLUTELY NO generic neon gradients, glassmorphism blur, or multi-color splashes."
+  },
+  "typography": {
+    "font_family_heading": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    "font_family_body": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    "font_family_mono": "'JetBrains Mono', 'Source Code Pro', Consolas, monospace",
+    "sizes": {
+      "hero_h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-[#003B7A]",
+      "section_h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[#003B7A]",
+      "subsection_h3": "text-xl sm:text-2xl font-semibold text-[#003B7A]",
+      "card_h4": "text-lg sm:text-xl font-semibold text-[#003B7A]",
+      "body_large": "text-lg text-[#3F434A] leading-relaxed",
+      "body_standard": "text-base text-[#3F434A] leading-relaxed",
+      "caption_mono": "text-xs font-mono uppercase tracking-widest text-[#8A8F96]"
+    },
+    "rules": "Headings must always use tight tracking and Deep TrueCore Blue (#003B7A). Body text desktop size 16px-18px in Dark Charcoal (#3F434A) for optimal WCAG 2.2 AA contrast. Technical parameters and part numbers should use font-mono with Metallic Grey accent."
+  },
+  "spacing_and_layout": {
+    "container_max_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_padding": "py-16 lg:py-24",
+    "card_padding": "p-6 lg:p-8",
+    "grid_gap": "gap-6 lg:gap-8",
+    "card_border_radius": "rounded-sm border border-[#8A8F96]/30 shadow-sm hover:border-[#10A6D8] transition-colors duration-200 bg-white",
+    "dividers": "border-t border-[#8A8F96]/30 my-8",
+    "bento_strategy": "Precision Technical Grid. Mix hero technical feature cards (col-span-2) with spec highlight boxes (col-span-1). Use explicit 1px Metallic Grey borders and clear 24px-32px section gaps."
+  },
+  "component_guidelines": {
+    "navigation_header": "Fixed top bar with subtle background white (#FFFFFF) + 1px bottom border (#8A8F96/20), Deep Blue (#003B7A) logo text with Cyan accent dot, visible primary navigation items (Home, About, Products, Industries, Technology, Directors, Contact), CTA button 'Request a Quote' in Deep Blue with Cyan hover effect. Mobile responsive drawer.",
+    "hero_section": "Clean white background with precise technical grid lines SVG background, dual CTA ('Explore Catalogue' in solid #003B7A, 'Request Quick Quote' in outlined #003B7A with #10A6D8 text), technical highlights badge bar (ISO Certified, Precision Tolerances, Custom Shore Hardness), crisp product photography showcase. Strictly NO carousel.",
+    "product_catalogue": "Facetted search with search input, Category filter pills, Application industry filter, Hardness shore slider/selector, Grid vs Table view toggle, Sorting dropdown (Alphabetical, Popularity, Spec Code), Empty state with reset filters button.",
+    "product_detail": "Multi-angle crisp product gallery, interactive Technical Specification Table (Material Grade, Tensile Strength, Shore Hardness, Abrasion Loss, Temp Range), Custom Variant selection, Direct B2B 'Request Quote for Item' modal trigger, downloadable PDF Technical Data Sheet (TDS) button.",
+    "enquiry_form": "Multi-step or clean single-page B2B Quote Request form with Company Name, GST/Tax ID (optional), Technical Drawing Upload, Quantity Required, Shore Hardness preference, Target Delivery Date, Validation error feedback, Sonner toast notification on success.",
+    "admin_portal": "Dark Charcoal (#3F434A) & Deep Blue sidebar navigation, high-density metric widgets, data tables with pagination, search, filter by enquiry status (Pending, Under Review, Quoted, Closed), modal dialogs for item editing, toast feedback.",
+    "whatsapp_cta": "Floating engineered green/cyan WhatsApp direct inquiry button on bottom right with tooltips ('Direct OEM Support')."
+  },
+  "media_and_assets": {
+    "hero_factory_machinery": "https://images.unsplash.com/photo-1717386255773-1e3037c81788?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxmYWN0b3J5JTIwbWFjaGluZXJ5JTIwYXV0b21hdGlvbnxlbnwwfHx8fDE3OTE3MTY1ODd8MA&ixlib=rb-4.1.0&q=85",
+    "hero_industrial_arm": "https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHw0fHxmYWN0b3J5JTIwbWFjaGluZXJ5JTIwYXV0b21hdGlvbnxlbnwwfHx8fDE3OTE3MTY1ODd8MA&ixlib=rb-4.1.0&q=85",
+    "product_polyurethane_rollers": "https://images.unsplash.com/photo-1730201623507-d4ef69f05cf6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwbWFjaGluZXJ5JTIwcG9seXVyZXRoYW5lJTIwcHJvZHVjdHMlMjByb2xsZXJzJTIwc2VhbHN8ZW58MHx8fHwxNzkxNzE2NTg0fDA&ixlib=rb-4.1.0&q=85",
+    "product_precision_seals": "https://images.unsplash.com/photo-1631377407762-0b7cae2d4b01?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxpbmR1c3RyaWFsJTIwbWFjaGluZXJ5JTIwcG9seXVyZXRoYW5lJTIwcHJvZHVjdHMlMjByb2xsZXJzJTIwc2VhbHN8ZW58MHx8fHwxNzkxNzE2NTg0fDA&ixlib=rb-4.1.0&q=85",
+    "product_molded_components": "https://images.unsplash.com/photo-1657682744240-47dfee9725d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwzfHxpbmR1c3RyaWFsJTIwbWFjaGluZXJ5JTIwcG9seXVyZXRoYW5lJTIwcHJvZHVjdHMlMjByb2xsZXJzJTIwc2VhbHN8ZW58MHx8fHwxNzkxNzE2NTg0fDA&ixlib=rb-4.1.0&q=85",
+    "lab_quality_testing": "https://images.unsplash.com/photo-1581093577421-f561a654a353?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwzfHxpbmR1c3RyaWFsJTIwZW5naW5lZXJpbmclMjBsYWJvcmF0b3J5JTIwcXVhbGl0eSUyMHRlc3R8ZW58MHx8fHwxNzkxNzE2NTg0fDA&ixlib=rb-4.1.0&q=85",
+    "lab_dispensing": "https://images.unsplash.com/photo-1578496479531-32e296d5c6e1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwZW5naW5lZXJpbmclMjBsYWJvcmF0b3J5JTIwcXVhbGl0eSUyMHRlc3R8ZW58MHx8fHwxNzkxNzE2NTg0fDA&ixlib=rb-4.1.0&q=85",
+    "director_portrait_1": "https://images.unsplash.com/photo-1659353220482-554773c2f7fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBJbmRpYW4lMjBidXNpbmVzc21hbiUyMGRpcmVjdG9yJTIwZXhlY3V0aXZlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzkxNzE2NTg0fDA&ixlib=rb-4.1.0&q=85",
+    "director_portrait_2": "https://images.unsplash.com/photo-1589386417686-0d34b5903d23?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHxjb3Jwb3JhdGUlMjBJbmRpYW4lMjBidXNpbmVzc21hbiUyMGRpcmVjdG9yJTIwZXhlY3V0aXZlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzkxNzE2NTg0fDA&ixlib=rb-4.1.0&q=85",
+    "director_portrait_3": "https://images.unsplash.com/photo-1584940120505-117038d90b05?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjBJbmRpYW4lMjBidXNpbmVzc21hbiUyMGRpcmVjdG9yJTIwZXhlY3V0aXZlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzkxNzE2NTg0fDA&ixlib=rb-4.1.0&q=85"
+  },
+  "testing_and_accessibility": {
+    "data_testid_rule": "ALL interactive components, buttons, inputs, links, tabs, tables, status indicators, quote request forms, and modal dialogs MUST include clear role-based kebab-case `data-testid` attributes. Example: `data-testid=\"nav-products-link\"`, `data-testid=\"enquiry-submit-button\"`, `data-testid=\"product-search-input\"`.",
+    "wcag_compliance": "Target WCAG 2.2 AA. Primary text ratio >= 7.5:1 against white/light grey backgrounds. All buttons and interactive links have visible focus rings (`focus:ring-2 focus:ring-[#10A6D8] focus:outline-none`). Reduced-motion media query respected for Framer Motion transitions."
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the client's mandatory color palette: Deep TrueCore Blue #003B7A, TrueCore Cyan #10A6D8, Dark Charcoal #3F434A, Light Grey #EDEDED, White #FFFFFF, and Metallic Grey #8A8F96.",
+    "Ensure white dominates the main page backgrounds, with light grey (#EDEDED) used for subtle alternate section cards or panel backgrounds.",
+    "Do NOT introduce generic consumer tech gradients, neon purples/teals, or dark glassmorphism. Keep cards sharp or gently rounded (rounded-sm or rounded-md) with 1px Metallic Grey borders.",
+    "Implement all public routes (Home, About, Products, Product Detail, Industries, Technology, Directors, Contact, Request Quote, Privacy Policy, 404) and protected Admin portal pages (Login, Dashboard, Products, Categories, Industries, Content, Enquiries, Media, Directors, Settings, Users).",
+    "Use Lucide icons or Phosphor icons for clean geometric industrial iconography.",
+    "Ensure all interactive elements have data-testid attributes for reliable end-to-end testing.",
+    "Use Sonner (`sonner`) for toast notifications when user submits quote request or completes admin actions."
+  ]
+}

@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --tc-blue: #003b7a;
+    --tc-cyan: #10a6d8;
+    --tc-charcoal: #3f434a;
+    --tc-grey-light: #ededed;
+    --tc-grey-metal: #8a8f96;
+}
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 218 8% 27%;
+        --card: 0 0% 100%;
+        --card-foreground: 218 8% 27%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 218 8% 27%;
+        --primary: 210 100% 24%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 0 0% 93%;
+        --secondary-foreground: 210 100% 24%;
+        --muted: 0 0% 93%;
+        --muted-foreground: 213 5% 56%;
+        --accent: 196 86% 46%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 72% 51%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 213 5% 80%;
+        --input: 213 5% 76%;
+        --ring: 196 86% 46%;
+        --radius: 0.125rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        margin: 0;
+        background: #ffffff;
+        color: var(--tc-charcoal);
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, sans-serif;
+        font-size: 17px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+    }
+    @media (max-width: 640px) {
+        body {
+            font-size: 15.5px;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: var(--tc-blue);
+        letter-spacing: -0.02em;
+    }
+    ::selection {
+        background: var(--tc-cyan);
+        color: #fff;
+    }
+    :focus-visible {
+        outline: 2px solid var(--tc-cyan);
+        outline-offset: 2px;
+    }
+}
+
+@layer components {
+    .tc-container {
+        @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-10;
+    }
+    .tc-section {
+        @apply py-16 lg:py-24;
+    }
+    .tc-eyebrow {
+        font-family: "IBM Plex Mono", monospace;
+        @apply text-[11px] sm:text-xs uppercase tracking-[0.22em] text-[#8A8F96];
+    }
+    .tc-rule {
+        @apply block h-[3px] w-12 bg-[#10A6D8];
+    }
+    .tc-card {
+        @apply border border-[#8A8F96]/35 bg-white transition-colors duration-200;
+    }
+    .tc-card:hover {
+        @apply border-[#10A6D8];
+    }
+    .tc-btn {
+        @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] transition-colors duration-200 disabled:opacity-60 disabled:pointer-events-none;
+    }
+    .tc-btn-primary {
+        @apply tc-btn bg-[#003B7A] text-white hover:bg-[#10A6D8];
+    }
+    .tc-btn-outline {
+        @apply tc-btn border border-[#003B7A] text-[#003B7A] hover:border-[#10A6D8] hover:text-[#10A6D8];
+    }
+    .tc-btn-ghost {
+        @apply tc-btn text-[#003B7A] hover:text-[#10A6D8] px-0;
+    }
+    .tc-input {
+        @apply w-full border border-[#8A8F96]/50 bg-white px-3 py-2.5 text-[15px] text-[#3F434A] placeholder:text-[#8A8F96] focus:border-[#10A6D8] focus:outline-none focus:ring-2 focus:ring-[#10A6D8]/30;
+    }
+    .tc-label {
+        @apply mb-1.5 block text-[13px] font-semibold text-[#003B7A];
+    }
+    .tc-mono {
+        font-family: "IBM Plex Mono", monospace;
+    }
+    .tc-grid-bg {
+        background-image: linear-gradient(
+                to right,
+                rgba(138, 143, 150, 0.16) 1px,
+                transparent 1px
+            ),
+            linear-gradient(
+                to bottom,
+                rgba(138, 143, 150, 0.16) 1px,
+                transparent 1px
+            );
+        background-size: 56px 56px;
+    }
+    .tc-reveal {
+        animation: tc-fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+}
+
+@keyframes tc-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+    }
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+}
